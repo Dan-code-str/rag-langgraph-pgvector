@@ -1,6 +1,6 @@
 # PGVector con LangGraph RAG
 
-Un proceso modular de «generación aumentada por recuperación» que utiliza LangChain, LangGraph y una base de datos PGVector en Docker.
+Proceso de generación aumentada por recuperación (RAG) que utiliza LangChain, LangGraph y una base de datos PGVector en Docker.
 
 ## ⚙️ Instalación y ejecución
 1. Iniciar la base de datos: `docker-compose up -d`
@@ -10,7 +10,7 @@ Un proceso modular de «generación aumentada por recuperación» que utiliza La
 
 ---
 
-## 📊 Sample Inputs and Outputs
+## 📊 Ejemplos de Inputs y Outputs para ingestion/query
 
 Para demostrar el funcionamiento de este sistema RAG, se probó el proceso con dos conjuntos de datos completamente diferentes, con el fin de demostrar que recupera el contexto con precisión independientemente del ámbito.
 
@@ -24,6 +24,8 @@ Para demostrar el funcionamiento de este sistema RAG, se probó el proceso con d
   Ingestión
   Documento separado en 4 chunks.
   Completado
+
+<img width="1104" height="320" alt="Captura de pantalla 2026-07-12 174447" src="https://github.com/user-attachments/assets/2f9c9608-e111-4639-bb4d-75cdf5b5dd58" />
 
 #### Fase de consulta
 
@@ -65,6 +67,8 @@ Para demostrar el funcionamiento de este sistema RAG, se probó el proceso con d
   Ingestión
   Documento separado en 8 chunks.
   Completado
+
+<img width="1100" height="470" alt="Captura de pantalla 2026-07-12 174317" src="https://github.com/user-attachments/assets/a67d3c37-5065-4821-a8e5-87376ef81eb5" />
 
 #### Fase de consulta
 
